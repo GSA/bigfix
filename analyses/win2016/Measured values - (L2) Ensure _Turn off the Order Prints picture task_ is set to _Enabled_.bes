@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Measured values - (L2) Ensure 'Turn off the Order Prints picture task' is set to 'Enabled'</Title>
+		<Description>This policy setting specifies whether the 'Order Prints Online' task is available from Picture Tasks in Windows folders.</Description>
+		<Relevance><![CDATA[(name of it = "Win2016" and product type of it != nt domain controller product type) of operating system]]></Relevance>
+		<Relevance>true</Relevance>
+		<Category></Category>
+		<MIMEField>
+			<Name>x-fixlet-requested-id</Name>
+			<Value></Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-analysis-id</Name>
+			<Value>20kpqj3m-ukvc-5aq1-110c-vcijww83ds16</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-batch-id</Name>
+			<Value>20170519T182626</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-metadata</Name>
+			<Value>{"scm_parameters":{"properties":{"1":{"type":"string"}}}}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Tue, 27 Feb 2018 12:00:00 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="NoOnlinePrintsWizard" ID="1" EvaluationPeriod="PT12H"><![CDATA[(item 0 of it & " : " & item 1 of it) of (item 1 of it, ((item 0 of it & " : " & item 1 of it) of (name of it, (item 0 of it & " : " & item 1 of it) of (if exists key "Software\Microsoft\Windows\Currentversion\Policies\Explorer" of it then ((if exists value "NoOnlinePrintsWizard" of it then ((types of it as string) of values "NoOnlinePrintsWizard" of it, (concatenation "," of substrings separated by "%00" of it) of (if it ends with "%00%00" then preceding text of last "%00%00" of it else if it ends with "%00" then preceding text of last "%00" of it else it) of ((values "NoOnlinePrintsWizard" of it) as string)) else ("<no type>", "<no value>")) of key "Software\Microsoft\Windows\Currentversion\Policies\Explorer" of it) else ("<no type>", "<no key>"))) of keys "HKEY_LOCAL_MACHINE" of item 0 of it)) of (if x64 of operating system then ((x64 registry, "x64"); (x32 registry, "x32")) else (x32 registry, "x32"))]]></Property>
+	</Analysis>
+</BES>

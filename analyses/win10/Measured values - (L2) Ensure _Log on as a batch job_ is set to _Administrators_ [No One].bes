@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Measured values - (L2) Ensure 'Log on as a batch job' is set to 'Administrators' [No One]</Title>
+		<Description>This policy setting allows accounts to log on using the task scheduler service.</Description>
+		<Relevance><![CDATA[(name of it = "Win10" and product type of it != nt domain controller product type) of operating system]]></Relevance>
+		<Relevance>true</Relevance>
+		<Category></Category>
+		<MIMEField>
+			<Name>x-fixlet-requested-id</Name>
+			<Value></Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-analysis-id</Name>
+			<Value>1zkpqj3m-228c-5aq1-u74c-vcijww83dsh0</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-batch-id</Name>
+			<Value>20161220T163250</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-metadata</Name>
+			<Value>{"scm_parameters":{"properties":{"1":{"type":"string"}}}}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Wed, 28 Feb 2018 12:00:00 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="Local accounts test" ID="1" EvaluationPeriod="PT12H"><![CDATA[("account : " & (if exists sid of it then (component string of sid of it & " (" & (it as string) of sid of it & ")") else "<SID not available>")) of (security accounts (names of local users); local groups; security accounts ("Everyone"; "LOCAL"; "CREATOR OWNER"; "CREATOR GROUP"; "CREATOR OWNER SERVER"; "CREATOR GROUP SERVER"; "NT Pseudo Domain\NT Pseudo Domain"; "NT AUTHORITY\DIALUP"; "NT AUTHORITY\NETWORK"; "NT AUTHORITY\BATCH"; "NT AUTHORITY\INTERACTIVE"; "NT AUTHORITY\SERVICE"; "NT AUTHORITY\ANONYMOUS LOGON"; "NT AUTHORITY\PROXY"; "NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS"; "NT AUTHORITY\SELF"; "NT AUTHORITY\Authenticated Users"; "NT AUTHORITY\RESTRICTED"; "NT AUTHORITY\TERMINAL SERVER USER"; "NT AUTHORITY\REMOTE INTERACTIVE LOGON"; "NT AUTHORITY\SYSTEM"; "NT AUTHORITY\LOCAL SERVICE"; "NT AUTHORITY\NETWORK SERVICE"; "Domain Admins"; "Enterprise Admins"; "Local account"; "Local account and member of Administrators group")) whose (True)]]></Property>
+	</Analysis>
+</BES>

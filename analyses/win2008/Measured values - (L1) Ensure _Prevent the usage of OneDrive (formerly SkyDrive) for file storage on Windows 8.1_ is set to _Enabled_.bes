@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Measured values - (L1) Ensure 'Prevent the usage of OneDrive (formerly SkyDrive) for file storage on Windows 8.1' is set to 'Enabled'</Title>
+		<Description>Activate this analysis to retrieve measured values for the "(L1) Ensure 'Prevent the usage of OneDrive (formerly SkyDrive) for file storage on Windows 8.1' is set to 'Enabled'" check. </Description>
+		<Relevance><![CDATA[((version of client >= "8.2.1409.0") AND (not in proxy agent context | true) AND (if ((name of it = "Win2008R2") of operating system) then (if (product type of operating system != nt domain controller product type) then (platform id of operating system != 3) else false) else false)) | false]]></Relevance>
+		<Relevance>true</Relevance>
+		<Category></Category>
+		<MIMEField>
+			<Name>x-fixlet-requested-id</Name>
+			<Value>114320</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-analysis-id</Name>
+			<Value>20kpqj3m-ukvc-5aq1-u472-vcijww83ds08</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-batch-id</Name>
+			<Value>20170208T121843</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-metadata</Name>
+			<Value>{"scm_parameters":{"properties":{"1":{"type":"string"}}}}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Mon, 19 Mar 2018 19:46:02 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="DisableFileSync" ID="1" EvaluationPeriod="PT12H"><![CDATA[(item 0 of it & " : " & item 1 of it) of (item 1 of it, ((item 0 of it & " : " & item 1 of it) of (name of it, (item 0 of it & " : " & item 1 of it) of (if exists key "Software\Policies\Microsoft\Windows\Skydrive" of it then ((if exists value "DisableFileSync" of it then ((types of it as string) of values "DisableFileSync" of it, (concatenation "," of substrings separated by "%00" of it) of (if it ends with "%00%00" then preceding text of last "%00%00" of it else if it ends with "%00" then preceding text of last "%00" of it else it) of ((values "DisableFileSync" of it) as string)) else ("<no type>", "<no value>")) of key "Software\Policies\Microsoft\Windows\Skydrive" of it) else ("<no type>", "<no key>"))) of keys "HKEY_LOCAL_MACHINE" of item 0 of it)) of (if x64 of operating system then ((x64 registry, "x64"); (x32 registry, "x32")) else (x32 registry, "x32"))]]></Property>
+	</Analysis>
+</BES>

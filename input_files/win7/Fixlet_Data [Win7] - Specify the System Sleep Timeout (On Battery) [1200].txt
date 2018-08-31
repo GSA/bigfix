@@ -1,0 +1,20 @@
+{CUSTOM| Setting Title};Specify the System Sleep Timeout (On Battery) [1200];
+{CUSTOM| Setting Description1};In support of administration efforts to reduce the use of electricity by inactive computers.; 
+{CUSTOM| Setting Parameter};1200;
+{CUSTOM| Setting Description2};The computer will sleep after 20 minutes of inactivity.;
+{CUSTOM| Setting Description3};This setting may impact the ability of enterprise management tools to push patches and configuration changes to managed computers, therefore organizations should research the power management features of Windows and the capabilities of their management tools to leverage Wake-on-LAN and other features to remotely administer computers.;
+{CUSTOM| Setting GP UI Path};Computer Configuration\\Administrative Templates\\System\\Power Management\\Sleep Settings;
+{CUSTOM| Setting Remediation Impact};-;
+{CUSTOM| Generate Analysis ID};0zkpqj3m-ukvc-5aq1-u703-vcijww83dsh7;
+{CUSTOM| Setting CCE ID};CCE-79403-2;
+{CUSTOM| Fixlet Creation Date};Fri, 20 Apr 2018 12:00:00;
+{CUSTOM| Setting Category};OCISO_SecEng_Custom;
+{CUSTOM| Setting CIS ID & Title};Specify_the_System_Sleep_Timeout_On_Battery;
+{CUSTOM| CIS Benchmark Version & Title};2.0.5.1_USGCB_Microsoft_Windows_7_Security_Benchmark;
+{CUSTOM| Windows Version};Win7;
+{CUSTOM| Setting Registry Key Name};DCSettingIndex;
+{CUSTOM| Setting Registry Key Path};Software\\Policies\\Microsoft\\Power\\PowerSettings\\29F6C1DB-86DA-48C5-9FDB-F2B67B1F44DA;
+{CUSTOM| Setting Parameter Value};1200;
+{CUSTOM| Generate Fixlet SCM ID};00ldluxk-5erz-7dve-k503-liqkc3a71wr7;
+{CUSTOM| Obtain Batch ID from another Fixlet in Checklist};20170403T135055;s
+{CUSTOM| Obtain Sentinel ID from Applicability Fixlet in Target Checklist};8191bc7b-b151-51b3-970f-4ba293e6a57a;

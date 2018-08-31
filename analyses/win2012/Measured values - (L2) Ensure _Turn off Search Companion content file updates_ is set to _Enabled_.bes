@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Measured values - (L2) Ensure 'Turn off Search Companion content file updates' is set to 'Enabled'</Title>
+		<Description>This policy setting specifies whether Search Companion should automatically download content updates during local and Internet searches.</Description>
+		<Relevance><![CDATA[(name of it = "Win2012R2" and product type of it != nt domain controller product type) of operating system]]></Relevance>
+		<Relevance>true</Relevance>
+		<Category></Category>
+		<MIMEField>
+			<Name>x-fixlet-requested-id</Name>
+			<Value></Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-analysis-id</Name>
+			<Value>20kpqj3m-19vc-5aq1-u74c-vcijww83ds12</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-batch-id</Name>
+			<Value>20160906T153113</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-metadata</Name>
+			<Value>{"scm_parameters":{"properties":{"1":{"type":"string"}}}}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Tue, 27 Feb 2018 12:00:00 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="DisableContentFileUpdates" ID="1" EvaluationPeriod="PT12H"><![CDATA[(item 0 of it & " : " & item 1 of it) of (item 1 of it, ((item 0 of it & " : " & item 1 of it) of (name of it, (item 0 of it & " : " & item 1 of it) of (if exists key "Software\Policies\Microsoft\Searchcompanion" of it then ((if exists value "DisableContentFileUpdates" of it then ((types of it as string) of values "DisableContentFileUpdates" of it, (concatenation "," of substrings separated by "%00" of it) of (if it ends with "%00%00" then preceding text of last "%00%00" of it else if it ends with "%00" then preceding text of last "%00" of it else it) of ((values "DisableContentFileUpdates" of it) as string)) else ("<no type>", "<no value>")) of key "Software\Policies\Microsoft\Searchcompanion" of it) else ("<no type>", "<no key>"))) of keys "HKEY_LOCAL_MACHINE" of item 0 of it)) of (if x64 of operating system then ((x64 registry, "x64"); (x32 registry, "x32")) else (x32 registry, "x32"))]]></Property>
+	</Analysis>
+</BES>

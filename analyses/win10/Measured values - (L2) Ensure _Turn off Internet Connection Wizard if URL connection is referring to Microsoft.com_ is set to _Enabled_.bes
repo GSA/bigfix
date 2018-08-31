@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Measured values - (L2) Ensure 'Turn off Internet Connection Wizard if URL connection is referring to Microsoft.com' is set to 'Enabled'</Title>
+		<Description>This policy setting specifies whether the Internet Connection Wizard can connect to Microsoft to download a list of Internet Service Providers ISPs.</Description>
+		<Relevance><![CDATA[(name of it = "Win10" and product type of it != nt domain controller product type) of operating system]]></Relevance>
+		<Relevance>true</Relevance>
+		<Category></Category>
+		<MIMEField>
+			<Name>x-fixlet-requested-id</Name>
+			<Value></Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-analysis-id</Name>
+			<Value>1zkpqj3m-15vc-5aq1-u74c-vcijww83dsh0</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-batch-id</Name>
+			<Value>20161220T163250</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-scm-metadata</Name>
+			<Value>{"scm_parameters":{"properties":{"1":{"type":"string"}}}}</Value>
+		</MIMEField>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Tue, 27 Feb 2018 12:00:00 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="ExitOnMSICW" ID="1" EvaluationPeriod="PT12H"><![CDATA[(item 0 of it & " : " & item 1 of it) of (item 1 of it, ((item 0 of it & " : " & item 1 of it) of (name of it, (item 0 of it & " : " & item 1 of it) of (if exists key "Software\Policies\Microsoft\Windows\Internet Connection Wizard" of it then ((if exists value "ExitOnMSICW" of it then ((types of it as string) of values "ExitOnMSICW" of it, (concatenation "," of substrings separated by "%00" of it) of (if it ends with "%00%00" then preceding text of last "%00%00" of it else if it ends with "%00" then preceding text of last "%00" of it else it) of ((values "ExitOnMSICW" of it) as string)) else ("<no type>", "<no value>")) of key "Software\Policies\Microsoft\Windows\Internet Connection Wizard" of it) else ("<no type>", "<no key>"))) of keys "HKEY_LOCAL_MACHINE" of item 0 of it)) of (if x64 of operating system then ((x64 registry, "x64"); (x32 registry, "x32")) else (x32 registry, "x32"))]]></Property>
+	</Analysis>
+</BES>

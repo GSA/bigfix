@@ -1,0 +1,74 @@
+not exists 1 whose ((((((((((((((exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessAccountInfo" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0) 
+
+and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessCalendar" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0))
+
+and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessCallHistory" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessCamera" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessContacts" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessEmail" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessLocation" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessMessaging" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessMicrophone" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessMotion" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessRadios" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessTrustedDevices" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsSyncWithDevices" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessPhone" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0)) and exists (concatenation ", " of (it as string) of ((type of it = "REG_DWORD") of it and ((if (type of it = "REG_BINARY" or type of it = "REG_NONE") then (hexadecimal integer (it as string)) else (it as integer)) of it = (it as integer) of ("2"))) of values "LetAppsAccessNotifications" of keys "Software\\Policies\\Microsoft\\Windows\\AppPrivacy" of keys "HKEY_LOCAL_MACHINE" of native registry) whose (number of substrings separated by ", " whose (it is not "") of it > 0 and number of substrings separated by ", " whose (it is not "") whose (it as boolean is False) of it = 0))
+
+
+==========================
+
+
+<Property Name="DisableFlashConfigRegistrar" ID="2" EvaluationPeriod="PT12H">
+
+<![CDATA[(item 0 of it & " : " & item 1 of it) of (item 1 of it, ((item 0 of it & " : " & item 1 of it) of (name of it, (item 0 of it & " : " & item 1 of it) of (if exists key "Software\Policies\Microsoft\Windows\WCN\Registrars" of it then ((if exists value "DisableFlashConfigRegistrar" of it then ((types of it as string) of values "DisableFlashConfigRegistrar" of it, (concatenation "," of substrings separated by "%00" of it) of (if it ends with "%00%00" then preceding text of last "%00%00" of it else if it ends with "%00" then preceding text of last "%00" of it else it) of ((values "DisableFlashConfigRegistrar" of it) as string)) else ("<no type>", "<no value>")) of key "Software\Policies\Microsoft\Windows\WCN\Registrars" of it) else ("<no type>", "<no key>"))) of keys "HKEY_LOCAL_MACHINE" of item 0 of it)) of (if x64 of operating system then ((x64 registry, "x64"); (x32 registry, "x32")) else (x32 registry, "x32"))]]></Property>
+
+
+==========================
+
+
+<Name>x-fixlet-scm-metadata</Name>
+			<Value>{"scm_parameters":{"properties":{"1":{"type":"string"},"2":{"type":"string"},"3":{"type":"string"},"4":{"type":"string"},"5":{"type":"string"},"6":{"type":"string"},"7":{"type":"string"},"8":{"type":"string"},"9":{"type":"string"},"10":{"type":"string"},"11":{"type":"string"},"12":{"type":"string"},"13":{"type":"string"},"14":{"type":"string"},"15":{"type":"string"}}}}</Value>
+
+<Name>x-fixlet-scm-metadata</Name>
+			<Value>{"scm_parameters":{"properties":{"1":{"type":"string"}                                                                                        }}}</V
+
+
+
+==========================
+{CUSTOM| Setting Title};Ensure 'Support device authentication using certificate' is set to 'Enabled: Automatic';
+
+reg_item    : "DevicePKInitEnabled"
+      
+value_data  : 1
+
+reg_item    : "DevicePKInitBehavior"
+value_data  : 0
+
+
+==========================
+{CUSTOM| Setting Title};Ensure 'Let Windows apps *' is set to 'Enabled: Force Deny';
+reg_item01    : "LetAppsAccessAccountInfo"
+      
+reg_item02    : "LetAppsAccessCalendar"
+      
+    
+reg_item03    : "LetAppsAccessCallHistory"
+      
+    
+reg_item04    : "LetAppsAccessCamera"
+      
+          
+reg_item05    : "LetAppsAccessContacts"
+      
+      
+reg_item06    : "LetAppsAccessEmail"
+      
+reg_item07    : "LetAppsAccessLocation"
+      
+reg_item08    : "LetAppsAccessMessaging"
+      
+reg_item09    : "LetAppsAccessMicrophone"
+      
+reg_item10    : "LetAppsAccessMotion"
+      
+reg_item11    : "LetAppsAccessRadios"
+      
+reg_item12    : "LetAppsAccessTrustedDevices"
+      
+reg_item13    : "LetAppsSyncWithDevices"
+      
+reg_item14    : "LetAppsAccessPhone"
+      
+reg_item15    : "LetAppsAccessNotifications"
+      
+

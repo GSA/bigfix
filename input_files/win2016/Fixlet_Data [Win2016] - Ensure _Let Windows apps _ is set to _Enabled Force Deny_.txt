@@ -1,0 +1,68 @@
+{CUSTOM| Setting Title};Ensure 'Let Windows apps *' is set to 'Enabled: Force Deny';
+{CUSTOM| Setting Description1};These policy settings specify whether Windows apps can access personal data, resources or other applications.; 
+{CUSTOM| Setting Parameter};Enabled: Force Deny;
+{CUSTOM| Setting Description2};The following 15 settings are in scope: Let Windows apps access account information, Let Windows apps access call history, Let Windows apps access contacts, Let Windows apps access email, Let Windows apps access location, Let Windows apps access messaging, Let Windows apps access motion, Let Windows apps access the calendar, Let Windows apps access the camera, Let Windows apps access the microphone, Let Windows apps access trusted devices, Let Windows apps control radios, Let Windows apps sync with devices, Let Windows apps make phone calls, Let Windows apps access notifications;
+{CUSTOM| Setting Description3};In an enterprise environment where you want to maintain user privacy, Windows apps should not need or require access to personal data, resources or other applications.;
+{CUSTOM| Setting GP UI Path};Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access account information
+ | Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access call history | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access contacts
+ | Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access email | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access location | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access messaging | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access motion | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access the calendar | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access the camera | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access the microphone | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access trusted devices
+ | Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps control radios
+ | Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps sync with devices | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps make phone calls | 
+Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\App Privacy\\Let Windows apps access notifications;
+{CUSTOM| Setting Remediation Impact};Windows apps will be restricted from accessing potentially sensitive information or resources, and employees in your organization will not be able to change it.;
+{CUSTOM| Generate Analysis ID};20kpqj3m-ukvc-51q1-u74c-vcijww83ds16;
+{CUSTOM| Setting CCE ID};CCE|NULL;
+{CUSTOM| Fixlet Creation Date};Mon, 26 Feb 2018 12:00:00;
+{CUSTOM| Setting Category};OCISO_SecEng_Custom;
+{CUSTOM| Setting CIS ID & Title};18.9.5.1_Ensure_Let_Windows_apps_is_set_to_Enabled_Force_Deny;
+{CUSTOM| CIS Benchmark Version & Title};1.0.0_CIS_Microsoft_Windows_Server_2016_Security_Benchmark;
+{CUSTOM| Windows Version};Win2016;
+{CUSTOM| Setting Registry Key Name};LetAppsAccessAccountInfo;
+{CUSTOM| Setting Registry Key Path};Software\\Policies\\Microsoft\\Windows\\AppPrivacy;
+{CUSTOM| Setting Parameter Value};2;
+{CUSTOM| Generate Fixlet SCM ID};20ldluxk-5erz-51ve-k504-liqkc3a71w16;
+{CUSTOM| Obtain Batch ID from another Fixlet in Checklist};20170519T182626;
+{CUSTOM| Obtain Sentinel ID from Applicability Fixlet in Target Checklist};f3075d8e-9b00-5600-9d88-18883e59e09a;
+
+reg_item01    : "LetAppsAccessAccountInfo"
+  
+reg_item02    : "LetAppsAccessCalendar"
+ 
+reg_item03    : "LetAppsAccessCallHistory"
+      
+    
+reg_item04    : "LetAppsAccessCamera"
+      
+          
+reg_item05    : "LetAppsAccessContacts"
+      
+      
+reg_item06    : "LetAppsAccessEmail"
+      
+reg_item07    : "LetAppsAccessLocation"
+      
+reg_item08    : "LetAppsAccessMessaging"
+      
+reg_item09    : "LetAppsAccessMicrophone"
+      
+reg_item10    : "LetAppsAccessMotion"
+      
+reg_item11    : "LetAppsAccessRadios"
+      
+reg_item12    : "LetAppsAccessTrustedDevices"
+      
+reg_item13    : "LetAppsSyncWithDevices"
+      
+reg_item14    : "LetAppsAccessPhone"
+      
+reg_item15    : "LetAppsAccessNotifications"
+    

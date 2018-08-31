@@ -1,0 +1,40 @@
+{CUSTOM| Setting Title};Ensure 'Support device authentication using certificate' is set to 'Enabled: Automatic';
+{CUSTOM| Setting Description1};This policy setting allows you to set support for Kerberos to attempt authentication using the certificate for the device to the domain.; 
+{CUSTOM| Setting Parameter};Enabled: Automatic;
+{CUSTOM| Setting Description2};Support for device authentication using certificate will require connectivity to a DC in the device account domain which supports certificate authentication for computer accounts.;
+{CUSTOM| Setting Description3};Having this set to Automatic will allow certificate based authentication to be used whenever possible.;
+{CUSTOM| Setting GP UI Path};Computer Configuration\\Policies\\Administrative Templates\\System\\Kerberos\\Support device authentication using certificate;
+{CUSTOM| Setting Remediation Impact};None - this is the default configuration.;
+{CUSTOM| Generate Analysis ID};1zkpqj3m-ukvc-5aq1-u231-vcijww83dsh0;
+{CUSTOM| Setting CCE ID};CCE-41396-3;
+{CUSTOM| Fixlet Creation Date};Tue, 27 Feb 2018 12:00:00;
+{CUSTOM| Setting Category};OCISO_SecEng_Custom;
+{CUSTOM| Setting CIS ID & Title};18.8.23.1_Ensure_Support_device_authentication_using_certificate_is_set_to_Enabled_Automatic;
+{CUSTOM| CIS Benchmark Version & Title};1.1.1_CIS_Microsoft_Windows_10_Security_Benchmark;
+{CUSTOM| Windows Version};Win10;
+{CUSTOM| Setting Registry Key Name};DevicePKInitEnabled;
+{CUSTOM| Setting Registry Key Path};Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\kerberos\\parameters;
+{CUSTOM| Setting Parameter Value};1;
+{CUSTOM| Generate Fixlet SCM ID};10ldluxk-5erz-7dve-k231-liqkc3a71wr0;
+{CUSTOM| Obtain Batch ID from another Fixlet in Checklist};20161220T163250;
+{CUSTOM| Obtain Sentinel ID from Applicability Fixlet in Target Checklist};874b8b01-718d-530c-b4ab-3449e4c02df5;
+
+Find\Replace
+{CUSTOM| Generate Analysis ID};20kpqj3m-ukvc-5aq1-u231-vcijww83ds16;
+{CUSTOM| Generate Analysis ID};1zkpqj3m-ukvc-5aq1-u231-vcijww83dsh0;
+
+{CUSTOM| CIS Benchmark Version & Title};1.0.0_CIS_Microsoft_Windows_Server_2016_Security_Benchmark;
+{CUSTOM| CIS Benchmark Version & Title};1.1.1_CIS_Microsoft_Windows_10_Security_Benchmark;
+
+{CUSTOM| Windows Version};Win2016;
+{CUSTOM| Windows Version};Win10;
+
+{CUSTOM| Generate Fixlet SCM ID};20ldluxk-5erz-7dve-k231-liqkc3a71w16;
+{CUSTOM| Generate Fixlet SCM ID};10ldluxk-5erz-7dve-k231-liqkc3a71wr0;
+
+{CUSTOM| Obtain Batch ID from another Fixlet in Checklist};20170519T182626;
+{CUSTOM| Obtain Batch ID from another Fixlet in Checklist};20161220T163250;
+
+{CUSTOM| Obtain Sentinel ID from Applicability Fixlet in Target Checklist};f3075d8e-9b00-5600-9d88-18883e59e09a;
+{CUSTOM| Obtain Sentinel ID from Applicability Fixlet in Target Checklist};874b8b01-718d-530c-b4ab-3449e4c02df5;
+
